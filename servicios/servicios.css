@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: grid;
+    grid-template-rows: auto 1fr auto; /* Header, contenido dinámico, footer */
+    min-height: 100vh; /* Altura mínima igual al viewport */
+    background-color:#f1e8d6;
+}
+
+.content{
+    margin-top: calc(1rem + 2rem); /* Altura del header (aproximadamente 3rem) */
+    padding: 2em;
+}
+
+header {
+    background-color: #004D94;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    gap: 1rem;
+    position: fixed; /* Fija el header */
+    top: 0; /* Se posiciona en la parte superior de la ventana */
+    width: 100%; /* Asegura que abarque todo el ancho */
+    z-index: 1000; /* Se asegura de que esté por encima de otros elementos */
+}
+main{
+    margin-top: 6rem;
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 3rem;
+    margin-right: 2rem; /* Espaciado entre logo y elementos cercanos */
+}
+
+.container-nav {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1rem; /* Espaciado entre botones de navegación */
+}
+
+.link-nav {
+    background-color: rgb(255, 255, 255);
+    padding: 1rem;
+    width: 15rem;
+    margin: 0;
+    border: solid 5px #004D94;
+    border-radius: 0.8rem;
+    text-align: center;
+    height: 1.5rem;
+    display: grid;
+    place-content: center;
+    color: #023535;
+    font-family: boton;
+    cursor: pointer;
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+
+.link-nav:hover {
+    color: #B78400;
+    border: solid 5px #B78400;
+}
+
+/* Estilo para el input de búsqueda y su contenedor */
+.search-container {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem; /* Espacio entre input y lupa */
+}
+
+.text-input {
+    width: 25rem;
+    height: 2rem; /* Ajustar la altura */
+    padding: 0.5rem; /* Espaciado interno */
+    font-size: 1.2rem;
+    border: 2px solid #004D94;
+    border-radius: 0.5rem;
+}
+
+.search-icon {
+    font-size: 1.5rem;
+    color: #004D94;
+    cursor: pointer;
+}
+
+main {
+    padding: 20px;
+  }
+  
+section {
+    margin-bottom: 20px;
+    
+}
+section > h2{
+    font-size: 3rem;
+}
+
+h2 {
+    color: #B78400;
+    border-bottom: 5px solid #B78400;
+    padding-bottom: 5px;
+    margin-bottom: 1.5rem;
+    width: 70rem; 
+}
+.vi,.co,.mo,.vivi,.au{
+    font-size: 1.5rem;
+    margin-left: 2rem;
+}
+.fact{
+    text-decoration: none;
+}
+.fact:hover {
+    color: #B78400;
+    border-bottom: solid 5px #B78400;
+}
+.contact-button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #002f5f;
+    color: white;
+    text-decoration: none;
+    margin-bottom: 1rem;
+}
+.espacio{
+    color: #f1e8d6;
+    font-size: 5rem;
+}
+
+footer {
+    background-color: #004D94;
+    padding: 1rem;
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+.footer-contact {
+    display: flexbox;
+    align-items: center;
+    gap: 1rem;
+}
+
+.contact-icons span {
+    margin-right: 0.5rem;
+}

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grupo JR</title>
+    <link rel="stylesheet" href="./facturas.css">
+</head>
+<body>
+    <!-- Barra de navegación -->
+    <header>
+        <div class="logo">Logo</div>
+        
+        <div class="container-nav">
+            <a href="/index.html" class="link-nav">Inicio</a>
+            <a href="#" class="link-nav">Nosotros</a>
+            <a href="/servicios/servicios.html" class="link-nav">Servicios</a>
+            <a href="#" class="link-nav">Iniciar sesion/Registrase</a>
+        </div>
+    
+        <div class="search-container">
+            <span class="search-icon">🔍</span>
+            <input type="text" class="text-input" placeholder="Buscar...">
+
+        </div>
+    </header>
+    <main>
+        <h1>NOVIEMBRE 2024</h1>
+
+        <section class="table-section">
+            <h2>Gastos</h2>
+            <div class="search-container">
+                <input type="text" class="gastos-busqueda" placeholder="Buscar...">
+                <button class="button" id="btnbuga">Buscar</button>
+            </div>
+            <table id="tabla-gastos">
+                <thead>
+                    <tr>
+                        <th>Folio Fiscal</th>
+                        <th>RFC</th>
+                        <th>Subtotal</th>
+                        <th>IVA</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+            <div class="total">
+                <label>Total:</label>
+                <input type="text">
+            </div>
+        </section>
+        
+        <section class="table-section">
+            <h2>Ingresos</h2>
+            <div class="search-container">
+                <input type="text" class="ingresos-busqueda" placeholder="Buscar...">
+                <button class="button" id="btnbuin">Buscar</button>
+
+            </div>
+            <table id="tabla-ingresos">
+                <thead>
+                    <tr>
+                        <th>Folio Fiscal</th>
+                        <th>RFC</th>
+                        <th>Subtotal</th>
+                        <th>IVA</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+            <div class="total">
+                <label>Total:</label>
+                <input type="text">
+            </div>
+        </section>
+
+        <section class="fiscal-info">
+            <h3>Régimen Fiscal:</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>ISR por pagar</th>
+                        <th>IVA por pagar</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+
+    <footer>
+        <div class="footer-logo">LOGO</div>
+        <div class="footer-contact">
+            <p>Contacto:</p>
+            <div class="contact-icons">
+                <a href="#">✉</a>
+                <span>Email</span>
+                <a href="#">📞</a>
+                <span>Teléfono</span>
+                <a href="#">🌐</a>
+                <span>Redes sociales</span>
+            </div>
+        </div>
+    </footer>
+    <script src="/js/factura.js"></script>
+</body>
+</html>
